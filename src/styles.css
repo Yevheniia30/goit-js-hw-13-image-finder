@@ -18,3 +18,24 @@ body {
    */
   background-image: url('./images/bg-pattern.png');
 }
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.stats,
+.stats-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stats-item:not(:last-child) {
+  margin-right: 10px;
+}
