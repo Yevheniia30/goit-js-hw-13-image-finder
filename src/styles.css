@@ -16,25 +16,56 @@ body {
   /*
    * CSS image reference example.
    */
-  background-image: url('./images/bg-pattern.png');
+  background-image: url('https://pixabay.com/get/g37e13c77579bef2c0cd628f1818e76f7257e0587045a5d9d7e3774b93638f8c2890ce87375dd5e68253c1e8258628baf0eebf73532a4fc80b4521a92946f5945_640.jpg');
 }
 ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+  margin-top: 20px;
 }
 img {
   display: block;
-  width: 100%;
-  height: auto;
+  width: 400px;
+  height: 270px;
+  object-fit: cover;
+}
+.js-wrapper {
+  padding-top: 20px;
+  max-width: 1690px;
+  margin: auto;
+  text-align: center;
+}
+.js-btn.is-hidden {
+  display: none;
+}
+.btn-primary.is-hidden {
+  display: none;
 }
 
+.js-input,
+.js-btn,
+.js-search-btn {
+  padding: 5px;
+  border-radius: 10px;
+  border-color: #808080;
+  box-shadow: 4px 5px 10px 0px rgba(134, 96, 66, 0.89);
+}
+.photo-item {
+  width: calc((100% - 90px) / 4);
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
 .stats,
 .stats-item {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0;
+}
+.stats {
+  padding: 10px;
 }
 .stats-item:not(:last-child) {
   margin-right: 10px;
